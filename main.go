@@ -17,8 +17,8 @@ import (
 var (
 	rootCmd = &cobra.Command{
 		Use:   "klf",
-		Short: "kubectl logs follower for multiple pods",
-		Long:  `A simple wrapper for [kubectl logs] for multiple pods.`,
+		Short: "kubectl logs tailer for k8s pods",
+		Long:  `A simple wrapper for [kubectl logs] for k8s pods.`,
 	}
 
 	addprefix bool

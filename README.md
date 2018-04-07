@@ -20,9 +20,16 @@ $ go get -u -v github.com/flowerinthenight/klf
 ## Usage
 
 ```bash
+# General usage:
+$ klf tail <svc|dep> <svc-name|deployment-name> [container-name] [--add-prefix] 
+```
+
+## Examples
+
+```bash
 # Tail a service `svc1` with only one container in the pod:
-$ klf tail svc1
+$ klf tail svc svc1
 
 # Tail a deployment `deploy1` with only one container in the pod:
-$ klf tail deploy1
+$ klf tail dep deploy1
 ```

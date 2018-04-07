@@ -9,4 +9,4 @@ or
 $ kubectl logs -f {deployment-name} [container-name]
 ```
 
-This simple wrapper tool exactly does that.
+This simple wrapper tool does exactly just that.

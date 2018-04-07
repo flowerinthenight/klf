@@ -16,3 +16,13 @@ This simple wrapper tool does exactly just that.
 ```bash
 $ go get -u -v github.com/flowerinthenight/klf
 ```
+
+## Usage
+
+```bash
+# Tail a service `svc1` with only one container in the pod:
+$ klf tail svc1
+
+Tail a deployment `deploy1` with only one container in the pod:
+$ klf tail deploy1
+```

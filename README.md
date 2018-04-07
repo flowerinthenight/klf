@@ -32,4 +32,10 @@ $ klf tail svc svc1
 
 # Tail a deployment `deploy1` with only one container in the pod:
 $ klf tail dep deploy1
+
+# Tail a service `svc1`'s sidecar container:
+$ klf tail svc svc1 git-sync
+
+# Tail a deployment `deploy1` with pod name as prefix:
+$ klf tail dep deploy1 --add-prefix
 ```

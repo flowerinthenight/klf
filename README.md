@@ -1,6 +1,10 @@
+**I suggest https://github.com/wercker/stern tool instead, which is much more mature and does the same thing.**
+
+----
+
 ## Overview
 
-I use `kubectl logs -f {pod-name} [container-name]` heavily when developing/debugging applications in Kubernetes. It quite difficult if I have multiple replicas though. `kubectl logs -l key=value` works to some extent but not with the `-f` flag. I just wish I could do something like:
+I use `kubectl logs -f {pod-name} [container-name]` heavily when developing/debugging applications in Kubernetes. It's quite difficult if I have multiple replicas though. `kubectl logs -l key=value` works to some extent but not with the `-f` flag. I just wish I could do something like:
 ```bash
 $ kubectl logs -f {service-name} [container-name]
 ```
